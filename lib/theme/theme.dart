@@ -11,7 +11,6 @@ final darkTheme = ThemeData(
       fontWeight: FontWeight.bold,
     ),
   ),
-  dividerColor: Colors.white30,
   listTileTheme: const ListTileThemeData(iconColor: Colors.white),
   textTheme: const TextTheme(
     bodyLarge: TextStyle(
@@ -21,4 +20,8 @@ final darkTheme = ThemeData(
     ),
     bodyMedium: TextStyle(color: Colors.white70, fontSize: 16, height: 1.5),
   ),
+  colorScheme: ColorScheme.fromSwatch().copyWith(
+    primary: const Color.fromARGB(255, 62, 59, 255),
+  ),
 );
+

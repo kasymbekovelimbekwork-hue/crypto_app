@@ -1,8 +1,9 @@
-import 'package:crypto_app/features/coin/coin_screen.dart';
-import 'package:crypto_app/features/crypto_list/crypto_list.dart';
+
+import 'package:crypto_app/screens/coins_screen.dart';
+import 'package:crypto_app/screens/home_screen.dart';
 
 
 final routes = {
-  '/': (context) => const CryptoListScreen(),
+  '/': (context) => const HomeScreen(),
   '/coin': (context) => const CoinScreen(),
 };

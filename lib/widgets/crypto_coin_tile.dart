@@ -10,13 +10,13 @@ class CryptoCoinTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return ListTile(
-      leading: Image.network(coin.imageUrl),
+      leading: Image.network(coin.imageUrl, width: 40,),
+      trailing: Icon(Icons.arrow_forward_ios, color: Colors.white, size: 20),
       title: Text(coin.name, style: theme.textTheme.bodyLarge),
       subtitle: Text(
         '${coin.priceInUSD.toStringAsFixed(2)}\$',
         style: theme.textTheme.bodyMedium,
       ),
-      trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
         Navigator.pushNamed(context, '/coin', arguments: coin.name);
       },
